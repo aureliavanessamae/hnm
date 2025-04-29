@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50">
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-xl font-bold text-gray-800">HaEnEm</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#features" class="text-gray-600 hover:text-blue-500">Catalogue</a></li>
+                    <li><a href="#about" class="text-gray-600 hover:text-blue-500">About Us</a></li>
+                    <li><a href="#contact" class="text-gray-600 hover:text-blue-500">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+	<section class="bg-gradient-to-b from-pink-700 to-gray-50 text-white py-20">
+		<div class="container mx-auto text-center">
+			<h2 class="text-4xl font-bold mb-4">Welcome to Our Product</h2>
+			<p class="mb-6 text-2xl italic">Choose your land as you like.</p>
+			<a href="#Catalogue" class="bg-white text-pink-700 px-6 py-3 rounded-full shadow-md hover:bg-gray-100">Learn More</a>
+		</div>
+	</section>
+
+        <section id="Catalogue" class="py-16">
+            <div class="container mx-auto text-center">
+                <h3 class="text-3xl font-bold mb-8">Catalogue</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h4 class="text-xl font-bold mb-2">Clothes</h4>
+						 <img src="https://i.pinimg.com/736x/9e/54/07/9e540776485e17ab81c54914711c1c29.jpg" 
+							alt="Clothes" 
+							class="mx-auto w-50 h-80 mb-4 rounded">
+                        <p>We provide many types of clothes for you to wear.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h4 class="text-xl font-bold mb-2">Trouser</h4>
+						<img src="https://i.pinimg.com/474x/44/fb/0a/44fb0ad11943a0ff311ba0deec16cbf9.jpg" 
+							alt="Clothes" 
+							class="mx-auto w-50 h-700 mb-4 rounded">
+                        <p>We provide you with trousers that are comfortable to wear at all times.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h4 class="text-xl font-bold mb-2">Outer</h4>
+                        <p>The more comfortable it is to wear the better.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-16">
+            <div class="container mx-auto text-center">
+                <h3 class="text-3xl font-bold mb-8">About Us</h3>
+                <p class="max-w-2xl mx-auto">We are a company dedicated to providing top-notch solutions for businesses worldwide. Our team of experts ensures that you get the best services tailored to your needs.</p>
+            </div>
+        </section>
+
+        <section id="contact" class="bg-gradient-to-b from-gray-50 to-pink-100"py-16">
+            <div class="container mx-auto text-center">
+                <h3 class="text-3xl font-bold mb-8">Contact Us</h3>
+                <form action="http://localhost/submit.php" method="POST" class="max-w-lg mx-auto">
+                    <div class="mb-4">
+                        <label for="name" class="block text-left font-bold">Name</label>
+                        <input type="text" id="name" name="name" class="w-full p-2 border rounded-lg" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block text-left font-bold">Email</label>
+                        <input type="email" id="email" name="email" class="w-full p-2 border rounded-lg" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="message" class="block text-left font-bold">Message</label>
+                        <textarea id="message" name="message" rows="5" class="w-full p-2 border rounded-lg" required></textarea>
+                    </div>
+                    <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">Send</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 BrandName. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
